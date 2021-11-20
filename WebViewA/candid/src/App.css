@@ -1,0 +1,217 @@
+
+.body{
+  width: 100vw;
+  height: 100vh;
+  background: rgb(41,41,41);
+  background-attachment: fixed;
+  overflow: hidden; 
+}
+.square-img{
+  width: 700px;
+  height: 630px;
+  margin-top: 20px;
+  margin-left: 120px;
+  position: absolute;
+  border-radius: 10px;
+  background: rgba(87, 90, 137, 1);
+  }
+
+.right-part{
+  width: 450px;
+  height: 640px;
+  margin-top:20px ;
+  position: absolute;
+  margin-left: 920px;
+  background:rgb(41,41,41); 
+  border-radius: 10px;
+}
+.heart{
+  width: 22px;
+  height: 22px;
+  margin-left: 10px;
+  margin-top: 5px;
+  background: url("./emojione-v1_beating-heart.png");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+.heart-num{
+  font-weight: 700;
+  margin-top: 5px;
+  margin-left: 40px;
+  position: absolute;
+  color: crimson;
+}
+
+.rect1{
+  width: 450px;
+  height: 165px;
+  background: url("./Rectangle\(1\).png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+.rect2{
+  width: 450px;
+  height: 165px;
+  background: url("./Rectangle.png");
+  background-position: center; 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.try-other-game{
+  color: white;
+  margin-top: 260px;
+}
+.bottom-rect{
+  width: 1250px;
+  height: 90px;
+  background-color: black;
+  margin-left: -800px;
+  margin-top: 15px;
+  position: absolute;
+  display: flex;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  background: rgb(41,41,41);
+  background-attachment: fixed;
+  
+}
+#time{
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.mic{
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+  background-color: white;
+  margin-top: 20px;
+  background: url("./microphone.png");
+  background-size: cover;
+  background-position: center;
+  margin-left: 250px;
+}
+
+.video{
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+  background-color: white;
+  margin-top: 20px;
+  background: url("./Video-icon.png");
+  background-size: cover;
+  background-position: center;
+  margin-left: 10px;
+}
+
+.thumb{
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+  background-color: white;
+  margin-top: 20px;
+  background: url("./thumb.png");
+  background-size: cover;
+  background-position: center;
+  margin-left: 10px;
+}
+
+.red-button{
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+  background-color: white;
+  margin-top: 20px;
+  background: url("./cancel-button.png");
+  background-size: cover;
+  background-position: center;
+  margin-left: 10px;
+}
+
+.chat{
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+  background-color: white;
+  margin-top: 20px;
+  background: url("./chat.png");
+  background-size: cover;
+  background-position: center;
+  margin-left: 450px;
+}
+
+.three-dot{
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+  background-color: white;
+  margin-top: 20px;
+  background: url("./3-dots.png");
+  background-size: cover;
+  background-position: center;
+  margin-left: 10px;
+}
+
+.square{
+  width: 700px;
+  height: 630px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-around;
+  border-radius: 10px;
+}
+
+
+.card{
+  height: 270px;
+  width: 240px;
+  position: relative;
+  transition: all 1s linear;
+  transform-style: preserve-3d;
+
+}
+
+.front,
+.back{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  font-family: 'Lobster', cursive;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.front{
+  background: url("./Group\ 93\ \(1\).png");
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+  backface-visibility: hidden;
+}
+
+.back{
+  background: url("./Group\ 94.png");
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  transform: rotateY(180deg);
+}
+
+.container:hover .card{
+  transform: rotateY(180deg);
+}
+
+.container{
+  perspective: 1000px;
+}
